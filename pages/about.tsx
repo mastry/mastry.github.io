@@ -11,7 +11,7 @@ export default function About() {
                 (I&apos;ve also been a beach monkey, a cashier, a pool boy, a
                 locksmith, and a soldier but I don&apos;t think you&apos;re here
                 for the stories of my youth. Trust me, you&apos;re not...
-                although I do have a few good stories I might spill over a free
+                although I do have a *few* good stories I might spill over a free
                 beer or two.)
             </p>
         </>
