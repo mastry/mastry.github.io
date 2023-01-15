@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-VariableFont_wdth,wght.ttf');
+}
+
+::selection {
+    background: #209cee;
+    color: white;
+}
+
+a,
+a:hover,
+a:visited {
+    color: #209cee;
+}
+
+p a {
+    text-decoration: underline dotted #209cee 1px;
+}
+
+code {
+    font-size: 1.1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+h4,
+h5,
+h6 {
+    font-variant: small-caps;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+body {
+    font-family: 'Open Sans';
+    font-size: medium;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+blockquote p {
+    border-left: solid lightgray 4px;
+    padding-left: 1em;
+    font-style: italic;
+    margin: 3em 0;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.is-active {
+    border-bottom: 1px solid #209cee;
+}
+
+#drawer {
+    height: 100vh; /* Specify a height */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    left: 0;
+    top: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.3s; /* 0.5 second transition effect to slide in the sidepanel */
+    opacity: 0.985;
+}
