@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: '/mastry',
+  basePath: '/mastry.github.io',
   reactStrictMode: true,
   swcMinify: true,
 
