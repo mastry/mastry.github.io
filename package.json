@@ -3,16 +3,15 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "dev": "next-remote-watch ./content",
-        "build": "next build",
-        "start": "next start",
-        "lint": "next lint"
+        "dev": "next",
+        "build": "next build && next export",
+        "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
     },
     "dependencies": {
         "date-fns": "^2.29.1",
         "feed": "^4.2.2",
         "gray-matter": "^4.0.3",
-        "next": "12.2.3",
+        "next": "13.1.2",
         "prismjs": "^1.28.0",
         "react": "18.2.0",
         "react-dom": "18.2.0",

@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: '/mastry',
   reactStrictMode: true,
   swcMinify: true,
-  experimental: {
-    images: {
-      unoptimized: true
-    }
+
+  images: {
+    unoptimized: true
   }
 }
 
