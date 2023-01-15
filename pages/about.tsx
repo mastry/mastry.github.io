@@ -14,12 +14,6 @@ export default function About() {
                 although I do have a few good stories I might spill over a free
                 beer or two.)
             </p>
-            <p className="mt-6 pt-6">
-                The views expressed herein are my personal views and opinions
-                and are not made on behalf of, or with input from any other
-                employee of,{' '}
-                <a href="https://duckcreek.com">Duck Creek Technologies</a>.
-            </p>
         </>
     )
 }
