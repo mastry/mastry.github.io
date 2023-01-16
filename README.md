@@ -1,7 +1,5 @@
 # The Blog
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d3820109-5763-4f17-a962-4000e3599e42/deploy-status)](https://app.netlify.com/sites/jeff-mastry/deploys)
-
 This is a Next.js-based blog using Typescript and [Bulma](https://bulma.io/). Content is written in markdown and converted to HTML by tools in the [unified/rehype](https://unifiedjs.com/) ecosystem. Markdown frontmatter is parsed with [graymatter](https://github.com/jonschlinkert/gray-matter). Syntax highlighting is handled by [Prism](https://prismjs.com/).
 
 ## Quirks, Anomalies, and Other Disturbing Things
