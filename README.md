@@ -18,7 +18,7 @@ Bulma styles that I don't like or styles that Bulma does not have are overridden
 
 ### Image Handling
 
-I like to use Typora to edit blog posts so I needed a way to handle images that worked in Typora and on the deployed blog site. I achieved this by configuring Typora to save all images in the `../public/images/posts/${filename}` folder. Then I wrote a `unified` "plugin" (really just a function) to rewrite the local path that Typora embeds in the markdown to a valid site URL. Here's a snipped of that code (from `/lib/posts.ts`):
+I like to use Typora to edit blog posts so I needed a way to handle images that worked in Typora and on the deployed blog site. I achieved this by configuring Typora to save all images in the `../public/images/posts/${filename}` folder. Then I wrote a `unified` "plugin" (really just a function) to rewrite the local path that Typora embeds in the markdown to a valid site URL. Here's a snippet of that code (from `/lib/posts.ts`):
 
 ```typescript
 export async function getPostData(id: string): Promise<PostData> {
