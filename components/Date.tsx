@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { parseISO } from 'date-fns'
 
 export interface DateProps {
@@ -7,6 +7,7 @@ export interface DateProps {
 }
 
 const Date: React.FC<DateProps> = (props) => {
+
     const date = parseISO(props.dateString)
     return (
         <time className={props.className} dateTime={props.dateString}>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { LinkedInIcon, RssIcon, GitHubIcon, TwitterIcon } from './Icons'
@@ -36,33 +36,35 @@ const Sidebar: React.FC = () => {
         <div className="is-flex is-flex-direction-column">
             <div className="is-flex is-justify-content-center is-hidden-mobile">
                 <div className="mb-5 is-flex is-flex-direction-column">
-                    <Link href="/" className="">
-                        <a className="pb-2">
-                            <span className={`${isActive('/')}`}>
-                                <span className={showIndicator('/')}>⚉ </span>
-                                Home
-                            </span>
-                        </a>
+                    <Link href="/" className="pb-2">
+                        <span className={`${isActive('/')}`}>
+                            <span className={showIndicator('/')}>⚉ </span>
+                            Home
+                        </span>
                     </Link>
-                    <Link href="/about" className="">
-                        <a className="pb-2">
-                            <span className={`${isActive('/about')}`}>
-                                <span className={showIndicator('/about')}>
-                                    ⚉{' '}
-                                </span>
-                                About
+                    <Link href="/projects" className="pb-2">
+                        <span className={`${isActive('/projects')}`}>
+                            <span className={showIndicator('/projects')}>
+                                ⚉{' '}
                             </span>
-                        </a>
+                            Projects
+                        </span>
                     </Link>
-                    <Link href="/contact" className="">
-                        <a className="pb-2">
-                            <span className={`${isActive('/contact')}`}>
-                                <span className={showIndicator('/contact')}>
-                                    ⚉{' '}
-                                </span>
-                                Contact
+                    <Link href="/about" className="pb-2">
+                        <span className={`${isActive('/about')}`}>
+                            <span className={showIndicator('/about')}>
+                                ⚉{' '}
                             </span>
-                        </a>
+                            About
+                        </span>
+                    </Link>
+                    <Link href="/contact" className="pb-2">
+                        <span className={`${isActive('/contact')}`}>
+                            <span className={showIndicator('/contact')}>
+                                ⚉{' '}
+                            </span>
+                            Contact
+                        </span>
                     </Link>
                 </div>
             </div>

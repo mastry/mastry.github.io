@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import { PostData } from '../lib/posts'
@@ -22,18 +22,16 @@ const Index: React.FC<Props> = (props) => {
             </Head>
             {props.allPostsData.map((post) => (
                 <Link href={`/posts/${post.id}`} key={post.id}>
-                    <a>
-                        <div className="columns">
-                            <div className="column is-9 has-text-dark has-text-weight-bold">
-                                <span title={`${post.title} (${post.date})`}>
-                                    {post.title}
-                                </span>
-                            </div>
-                            <div className="column is-3 is-hidden-mobile has-text-grey">
-                                {post.date?.substring(0, 10)}
-                            </div>
+                    <div className="columns">
+                        <div className="column is-9 has-text-dark has-text-weight-bold">
+                            <span title={`${post.title} (${post.date})`}>
+                                {post.title}
+                            </span>
                         </div>
-                    </a>
+                        <div className="column is-3 is-hidden-mobile has-text-grey">
+                            {post.date?.substring(0, 10)}
+                        </div>
+                    </div>
                 </Link>
             ))}
         </>

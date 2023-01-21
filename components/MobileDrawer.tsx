@@ -45,28 +45,28 @@ const Drawer: React.FC = () => {
                     <div className="column is-flex">
                         <div className="column is-flex is-flex-direction-column is-size-5">
                             <Link href="/">
-                                <a
+                                <span
                                     className="mb-3"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     Home
-                                </a>
+                                </span>
                             </Link>
                             <Link href="/about">
-                                <a
+                                <span
                                     className="mb-3"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     About
-                                </a>
+                                </span>
                             </Link>
                             <Link href="/contact">
-                                <a
+                                <span
                                     className="mb-3"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     Contact
-                                </a>
+                                </span>
                             </Link>
                         </div>
                         <div className="column">

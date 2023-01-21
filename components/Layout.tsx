@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Sidebar from './DesktopSidebar'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -9,6 +9,15 @@ export interface LayoutProps {
 }
 
 export const Layout: React.FC<LayoutProps> = (props) => {
+    const [hasMounted, setHaMounted] = React.useState(false)
+
+    useEffect(() => {
+        setHaMounted(true)
+    })
+
+    if (!hasMounted) {
+        return null
+    }
     return (
         <section className="section">
             <div className="columns">
